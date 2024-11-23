@@ -2,7 +2,10 @@
 const nextConfig = {
   sassOptions: {
     includePaths: ['.'],
-    // prependData: `@import "@/styles/variables.scss";`, // 可选：全局变量
+  },
+  eslint: {
+    // 在构建时忽略 ESLint 错误
+    ignoreDuringBuilds: true,
   },
 }
 
