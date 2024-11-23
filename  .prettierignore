@@ -1,0 +1,26 @@
+# 构建产物
+build
+dist
+
+# 依赖目录
+node_modules
+
+# 其他不需要格式化的文件或目录
+.git
+.svn
+.hg
+.idea
+.vscode
+
+# 特定文件类型
+*.min.js
+*.min.css
+*.svg
+*.json
+
+# 日志文件
+*.log
+
+# 特定文件
+package-lock.json
+yarn.lock

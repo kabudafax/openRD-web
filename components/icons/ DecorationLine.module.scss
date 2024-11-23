@@ -1,0 +1,25 @@
+.decorationLine {
+  position: relative;
+
+  .animatedPath {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+      animation: drawPath 1.5s ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes drawPath {
+  0% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+  }
+  100% {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+  }
+}
