@@ -1,4 +1,8 @@
-import { ChatBubbleBottomCenterTextIcon, ShieldCheckIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import {
+  ChatBubbleBottomCenterTextIcon,
+  ShieldCheckIcon,
+  UserGroupIcon,
+} from '@heroicons/react/24/outline'
 
 const features = [
   {
@@ -23,12 +27,10 @@ export default function Features() {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900">
+          <h2 className="text-3xl font-normal text-gray-900">
             我们致力于为罕见病患者打造便捷的信息平台
           </h2>
-          <p className="mt-4 text-xl text-gray-600">
-            让每一位患者都能获得专业的指导与支持
-          </p>
+          <p className="mt-4 text-xl text-gray-600">让每一位患者都能获得专业的指导与支持</p>
         </div>
 
         <div className="mt-16">
@@ -36,14 +38,10 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name} className="bg-white p-6 rounded-lg shadow">
                 <div className="flex justify-center">
-                  <feature.icon className="h-12 w-12 text-blue-500" />
+                  <feature.icon className="h-12 w-12 text-brand-500" />
                 </div>
-                <h3 className="mt-4 text-xl font-medium text-center">
-                  {feature.name}
-                </h3>
-                <p className="mt-2 text-gray-600 text-center">
-                  {feature.description}
-                </p>
+                <h3 className="mt-4 text-xl font-medium text-center">{feature.name}</h3>
+                <p className="mt-2 text-gray-600 text-center">{feature.description}</p>
               </div>
             ))}
           </div>

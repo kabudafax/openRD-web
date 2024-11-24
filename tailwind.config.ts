@@ -10,6 +10,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          400: '#5fb3d2', // 更浅色
+          500: '#48a5c9', // 主色
+          600: '#3690b4',
+        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

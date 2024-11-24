@@ -26,7 +26,7 @@ export default function Hero() {
 
             <Button
               size="lg"
-              className="bg-[#48a5c9] w-[200px] h-16 text-white px-6 py-3 rounded-md"
+              className="bg-brand-500 hover:bg-brand-600 w-[200px] h-16 text-white px-6 py-3 rounded-md"
             >
               <p className="text-xl leading-[1.5]">试试看</p>
               <ArrowRightIcon className="!w-6 !h-6" />

@@ -1,3 +1,29 @@
+import { cn } from '@/lib/utils'
+import InstagramIcon from '../icons/InstagramIcon'
+import MetaIcon from '../icons/MetaIcon'
+import XIcon from '../icons/XIcon'
+
+interface SocialLinkProps {
+  href: string
+  icon: React.ReactNode
+  label: string
+  className?: string
+}
+
+function SocialLink({ href, icon, label, className }: SocialLinkProps) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(' transition-colors duration-200', className)}
+    >
+      {icon}
+      <span className="sr-only">{label}</span>
+    </a>
+  )
+}
+
 export default function Footer() {
   return (
     <footer className="bg-white border-t">
@@ -12,10 +38,13 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">
               联系我们
             </h3>
-            <ul className="mt-4 space-y-4">
+            <ul className="mt-5 space-y-4">
               <li>
-                <a href="mailto:contact@openrd.com" className="text-gray-600 hover:text-gray-900">
-                  Email: contact@openrd.com
+                <a
+                  href="mailto:contact@openrd.com"
+                  className="text-gray-600 text-lg hover:text-gray-900"
+                >
+                  contact@openrd.com
                 </a>
               </li>
             </ul>
@@ -25,7 +54,29 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">
               关注我们
             </h3>
-            <div className="mt-4 flex space-x-6">{/* 社交媒体图标 */}</div>
+            <div className="mt-3 flex space-x-6">
+              {/* 社交媒体图标 */}
+              <div className="flex space-x-8">
+                <SocialLink
+                  href="https://facebook.com"
+                  icon={<MetaIcon className="w-8 h-8 " />}
+                  label="Follow us on Facebook"
+                  className="hover:text-[#6a6868]"
+                />
+                <SocialLink
+                  href="https://twitter.com"
+                  icon={<XIcon className="w-8 h-8 " />}
+                  label="Follow us on X (Twitter)"
+                  className="hover:text-[#6a6868]"
+                />
+                <SocialLink
+                  href="https://instagram.com"
+                  icon={<InstagramIcon className="w-8 h-8" />}
+                  label="Follow us on Instagram"
+                  className="hover:text-[#6a6868]"
+                />
+              </div>
+            </div>
           </div>
         </div>
 
