@@ -8,7 +8,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   return (
     <>
       <Header />
-      <main className="mt-[120px]">{children}</main>
+      <main className="mt-[120px] min-h-[calc(100vh-253px)]">{children}</main>
       <Footer />
     </>
   )

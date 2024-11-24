@@ -12,7 +12,7 @@ const features = [
   },
   {
     name: '信息可靠',
-    description: '所有信息均经过专业医生团队审核，确保准确性',
+    description: '所有信息均经过专业团队审核，确保准确性',
     icon: ShieldCheckIcon,
   },
   {

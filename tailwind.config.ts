@@ -11,9 +11,15 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
+          100: '#e6f3f8', // 最浅色
+          200: '#c5e2ee',
+          300: '#9fd0e3',
           400: '#5fb3d2', // 更浅色
           500: '#48a5c9', // 主色
           600: '#3690b4',
+          700: '#2b7290',
+          800: '#1f536b',
+          900: '#143547', // 最深
         },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
